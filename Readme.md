@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Юлия Скачкова](https://up.htmlacademy.ru/htmlcss/32/user/1725069).
-* Наставник: `Неизвестно`.
+- Студент: [Юлия Скачкова](https://up.htmlacademy.ru/htmlcss/32/user/1725069).
+- Наставник: [Павел Белобородов](https://htmlacademy.ru/profile/id466909).
 
 ---
 
