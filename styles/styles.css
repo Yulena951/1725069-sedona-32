@@ -1,0 +1,17 @@
+.promo-first {
+  background-image: url("../img/fone.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.mailing {
+  background-image: url("../img/fonemail.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.parameters {
+  background-image: url("../img/fone_catalog.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
