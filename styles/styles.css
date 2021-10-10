@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("/fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,16 +10,41 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/pt-sans-bold.woff2") format("woff2");
+  src: url("/fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   background-color: #ffffff;
+}
+
+.main-nav {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.list-nav {
+  width: 420px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-user {
+  max-width: 300px;
+  margin-left: auto;
 }
 
 .link-nav {
@@ -29,6 +54,20 @@ body {
   text-align: center;
   color: #000000;
   text-decoration: none;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
 }
 
 .promo-first {
@@ -42,6 +81,8 @@ body {
   text-align: center;
   font-size: 22px;
   line-height: 36px;
+  display: block;
+  margin: 0 auto;
 }
 
 .promo-title {
@@ -52,7 +93,32 @@ body {
   font-weight: 700;
 }
 
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
 .feature-item {
+  width: 400px;
+  text-align: center;
+}
+
+.content-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-item {
+  width: 400px;
   text-align: center;
 }
 
@@ -61,7 +127,6 @@ body {
   background-color: #83b3d3;
   color: #ffffff;
   width: 400px;
-  height: 384px;
 }
 
 .blue-title {
@@ -71,14 +136,14 @@ body {
   text-transform: uppercase;
 }
 
-.lighte-bloc {
+.light-bloc {
   text-align: center;
   background-color: #83b3d31f;
   width: 400px;
   height: 384px;
 }
 
-.lighte-title {
+.light-title {
   color: #000000;
   font-size: 24px;
   line-height: 28px;
@@ -95,6 +160,8 @@ body {
 }
 
 .search {
+  display: block;
+  margin: 0 auto;
   text-align: center;
   font-size: 22px;
   line-height: 26px;
@@ -120,6 +187,8 @@ body {
 }
 
 .mailing {
+  display: block;
+  margin: 0 auto;
   background-image: url("../img/index/fonemail.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -152,8 +221,20 @@ body {
   text-transform: uppercase;
 }
 
+.footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social {
+  width: 130px;
+  margin-right: 61px;
+}
+
 .footer-contacts {
-  text-align: center;
+  margin: 0 auto;
+  max-width: 720px;
 }
 
 .footer-phone {
