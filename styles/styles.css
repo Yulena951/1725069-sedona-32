@@ -242,7 +242,6 @@ body {
 .road {
   text-align: center;
   background-color: #83b3d333;
-
   width: 400px;
 }
 
@@ -325,7 +324,6 @@ body {
   height: 60px;
   padding: 0;
   border: none;
-
   padding-left: 22px;
   background: #f2f2f2;
   border-radius: 10px 0px 0px 10px;
@@ -401,10 +399,8 @@ body {
   color: #ffffff;
   background-image: url("../img/catalog/fone_catalog.jpg");
   background-repeat: no-repeat;
-
   box-sizing: border-box;
   background-size: cover;
-
   background-color: #495175;
 }
 
