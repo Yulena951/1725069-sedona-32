@@ -33,6 +33,10 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -40,7 +44,13 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background-color: #ffffff;
+  background: #f2f2f2;
+  width: 1200px;
+}
+
+.circuit {
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .main-nav {
@@ -51,15 +61,19 @@ body {
 
 .list-nav {
   display: flex;
-
+  flex-wrap: wrap;
   width: 420px;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
-.nav-item {
-  padding-right: 33px;
+.main-header-logo {
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  transform: translateX(-50%);
+  width: 138px;
 }
 
 .nav-user {
@@ -67,7 +81,14 @@ body {
   margin-left: auto;
 }
 
+.list-nav .nav-user {
+  min-width: 31px;
+  min-height: 27px;
+}
+
 .link-nav {
+  display: block;
+  padding: 20px 16px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -88,10 +109,14 @@ body {
 .logo {
   display: block;
   margin: 0 auto;
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .promo-first {
-  background-image: url("../img/index/fone.jpg");
+  background-image: url("../img/index/white_fone.svg"),
+    url("../img/index/fone.jpg");
+  background-position: bottom;
   background-color: #6158e0;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -111,6 +136,13 @@ body {
   text-transform: uppercase;
   color: #000000;
   font-weight: 700;
+  margin-top: 63px;
+  margin-bottom: 23px;
+}
+
+.description {
+  margin: 0;
+  margin-bottom: 79px;
 }
 
 .index-columns {
@@ -156,6 +188,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin-top: 98px;
 }
 
 .light-bloc {
@@ -164,12 +197,46 @@ body {
   width: 400px;
 }
 
+.light-bloc-house {
+  padding-top: 89px;
+}
+
+.light-bloc-burger {
+  padding-top: 91px;
+}
+
+.light-bloc-gift {
+  padding-top: 85px;
+}
+
+.light-title-1 {
+  color: #000000;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 23px;
+  margin: 0;
+}
+
 .light-title {
   color: #000000;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+  padding-top: 98px;
+  margin: 0;
+}
+
+.title-description {
+  padding-bottom: 79px;
+  margin: 0;
+}
+
+.light-title-description {
+  margin: 0;
+  padding-bottom: 77px;
 }
 
 .road {
@@ -193,6 +260,14 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
+  margin-top: 91px;
+}
+
+.point {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 57px;
 }
 
 .button-search {
@@ -202,8 +277,12 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #756257;
-
+  width: 575px;
   text-transform: uppercase;
+  padding-top: 13px;
+  padding-bottom: 17px;
+  margin-bottom: 91px;
+  border-radius: 10px;
 }
 
 .mailing {
@@ -224,11 +303,32 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 94px;
+}
+
+.mailing-info {
+  margin: 0;
+  padding-top: 28px;
+}
+
+.email-address {
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 93px;
 }
 
 .field {
   font-size: 18px;
   line-height: 26px;
+  width: 600px;
+  height: 60px;
+  padding: 0;
+  border: none;
+
+  padding-left: 22px;
+  background: #f2f2f2;
+  border-radius: 10px 0px 0px 10px;
 }
 
 .button-mailing {
@@ -239,31 +339,45 @@ body {
   background-color: #83b3d3;
   color: #ffffff;
   text-transform: uppercase;
+  width: 200px;
+  height: 60px;
+  padding: 0;
+  border-radius: 0px 10px 10px 0px;
+  border: none;
 }
 
 .footer-container {
   display: flex;
+  justify-content: space-between;
   width: 1200px;
-  margin: 0 auto;
+
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 .footer-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
 .social-item {
+  width: 20px;
+  height: 20px;
   padding-right: 30px;
+  padding-bottom: 5px;
 }
 
 .footer-social {
-  width: 130px;
+  max-width: 150px;
   margin-right: 61px;
+  margin-left: 72px;
 }
 
 .footer-contacts {
-  margin: 0 auto;
   max-width: 720px;
+  margin: 0;
 }
 
 .footer-phone {
@@ -274,15 +388,32 @@ body {
   text-decoration: none;
 }
 
+.website {
+  margin-left: 53px;
+  margin-right: 72px;
+}
+
 .parameters {
+  padding-top: 26px;
+  padding-right: 73px;
+  padding-bottom: 8px;
+  padding-left: 72px;
+  color: #ffffff;
   background-image: url("../img/catalog/fone_catalog.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+
+  box-sizing: border-box;
+  background-size: cover;
+
   background-color: #495175;
-  color: #ffffff;
 }
 
 .parameters-list-nav {
+  margin: 0;
+  padding: 0;
+  padding-left: 73px;
+  padding-top: 5px;
+  padding-bottom: 45px;
   list-style: none;
   display: flex;
 }
@@ -295,11 +426,10 @@ body {
   list-style: none;
 }
 
-.parameters-form {
-  display: flex;
-}
-
 .parameters-title {
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 71px;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
@@ -311,88 +441,145 @@ body {
 
 .parameters-form-fieldset {
   width: 150px;
-  margin-right: 65px;
+  margin-right: 67px;
+  margin-bottom: 83px;
+  padding: 0;
 }
 
-.parameters-form-fieldset legend {
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: 700;
-}
-
-.parameters-list {
-  font-size: 18px;
-  line-height: 23px;
+.parameters-button {
+  display: flex;
+  flex-direction: column;
+  margin-left: 81px;
 }
 
 .button-apply {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
-  text-align: center;
+
   color: #ffffff;
   background-color: #83b3d3;
+  width: 160px;
+  height: 48px;
+  margin-bottom: 20px;
 }
 
 .button-reset {
   font-size: 18px;
   line-height: 23px;
   background: transparent;
-  text-align: center;
+
   color: #ffffff;
   border: none;
+  width: 160px;
+  height: 23px;
+}
+
+.parameters-form {
+  display: flex;
+  justify-content: space-around;
+}
+
+.parameters-form-fieldset legend {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  padding: 0;
+}
+
+.parameters-item {
+  margin-bottom: 25px;
+
+  font-size: 14px;
+
+  padding: 0px;
 }
 
 .sorting {
   display: flex;
-  justify-content: space-between;
 }
 
-.sorting h2 {
+.sorting-heading {
   font-size: 30px;
   line-height: 39px;
   font-weight: 700;
   color: #000000;
   width: 340px;
+  margin: 0;
+  margin-top: 50px;
   margin-right: 190px;
+  margin-left: 71px;
+  padding: 0;
+}
+
+.button {
+  margin-top: 44px;
+  margin-right: 8px;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #e6e6e6;
+  border-radius: 4px;
 }
 
 .select-control {
   line-height: 23px;
   width: 290px;
+  height: 48px;
+  border: 2px solid #e6e6e6;
+  border-radius: 4px;
+  margin-top: 44px;
+  margin-bottom: 42px;
+  margin-right: 81px;
+  padding-left: 19px;
 }
 
 .title-hotel {
+  margin: 0;
   font-size: 24px;
   line-height: 31px;
   font-weight: 700;
   color: #000000;
 }
 
-.container {
-  display: flex;
+.cost {
+  margin: 0;
+  margin-top: 1px;
+  margin-bottom: 31px;
+}
 
-  flex-direction: column;
+.container {
+  margin-left: 72px;
+  margin-right: 72px;
 }
 
 .container-list {
   line-height: 23px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .container-item {
   display: flex;
-  justify-content: space-between;
+  border-top: 1px solid #e6e6e6;
 }
 
-.description {
-  display: flex;
-  flex-direction: column;
+.container-item:last-child {
+  border-bottom: 1px solid #e6e6e6;
 }
 
-.reitng {
-  display: flex;
-  flex-direction: column;
+.container-img {
+  width: 180px;
+  height: 120px;
+  margin-top: 31px;
+  margin-bottom: 30px;
+  margin-right: 37px;
+}
+
+.bloc {
+  margin-top: 28px;
+
+  max-width: 500px;
 }
 
 .button-detailed {
@@ -403,8 +590,15 @@ body {
   text-align: center;
   color: #ffffff;
   border: none;
+  border-radius: 4px;
   text-decoration: none;
   text-transform: uppercase;
+  margin: 0;
+  margin-right: 8px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .button-favourites {
@@ -417,6 +611,11 @@ body {
   border: none;
   text-decoration: none;
   text-transform: uppercase;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 4px;
 }
 
 .button-favourites-selected {
@@ -429,6 +628,25 @@ body {
   border: none;
   text-decoration: none;
   text-transform: uppercase;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 4px;
+}
+.rating-img {
+  margin: 0;
+}
+
+.rating {
+  display: flex;
+
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 34px;
+  margin-left: auto;
+
+  margin-bottom: 30px;
 }
 
 .ratings {
@@ -438,20 +656,19 @@ body {
   text-align: center;
   color: #333333;
   border: none;
+  border-radius: 4px;
   text-decoration: none;
   text-transform: uppercase;
-}
-
-.pagination {
-  display: flex;
-  list-style: none;
-}
-
-.pagination-item {
-  padding-right: 8px;
+  margin-top: 63px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 29px;
 }
 
 .pagination-show-more {
+  display: block;
+  margin: 0 auto;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -459,12 +676,40 @@ body {
   text-align: center;
   color: #ffffff;
   border: none;
+  border-radius: 4px;
   text-decoration: none;
   text-transform: uppercase;
   width: 625px;
+  height: 55px;
+  margin-top: 31px;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.pagination-container {
+  display: flex;
+  padding-top: 31px;
+  padding-bottom: 89px;
+}
+
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 55px;
+  height: 55px;
+  padding: 17px 19px;
+  border-radius: 4px;
   color: #ffffff;
   background-color: #83b3d3;
   text-decoration: none;
@@ -480,6 +725,17 @@ body {
 
 .sorting-type {
   line-height: 23px;
+
+  margin-left: auto;
+}
+
+.pagination-control {
+  border: 2px solid #e6e6e6;
+  border-radius: 4px;
+  width: 160px;
+  height: 48px;
+  margin: 0;
+  padding-left: 17px;
 }
 
 .mailing_catalog {
@@ -494,4 +750,5 @@ body {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+  margin: 0;
 }
