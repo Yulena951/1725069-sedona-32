@@ -987,6 +987,7 @@ fieldset {
   display: flex;
   justify-content: center;
 }
+
 .price-controls {
   position: relative;
   outline: none;
@@ -1004,6 +1005,7 @@ fieldset {
 .price-controls.left {
   border-radius: 4px 0 0 4px;
 }
+
 .price-controls.right {
   border-radius: 0 4px 4px 0;
   border-left: none;
@@ -1165,7 +1167,6 @@ fieldset {
 .sorting-container {
   display: flex;
   flex-wrap: wrap;
-
   margin-left: auto;
 }
 
