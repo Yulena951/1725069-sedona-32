@@ -131,7 +131,7 @@ body {
 .link-nav-current::before {
   position: absolute;
   right: 12px;
-  bottom: -21px;
+  bottom: -19px;
   left: 12px;
   height: 2px;
   background-color: #756257;
@@ -619,6 +619,7 @@ body {
   border: 3px solid #83b3d3;
   box-sizing: border-box;
   border-radius: 10px;
+  outline: none;
 }
 
 .footer-social-fb:focus {
@@ -627,6 +628,7 @@ body {
   border: 3px solid #83b3d3;
   box-sizing: border-box;
   border-radius: 10px;
+  outline: none;
 }
 
 .footer-social-youtube:focus {
@@ -635,6 +637,7 @@ body {
   border: 3px solid #83b3d3;
   box-sizing: border-box;
   border-radius: 10px;
+  outline: none;
 }
 
 .footer-social-tw:active {
@@ -678,6 +681,7 @@ body {
   border: 3px solid #83b3d3;
   box-sizing: border-box;
   border-radius: 10px;
+  outline: none;
 }
 
 .footer-phone:active {
@@ -932,6 +936,7 @@ fieldset {
 
 .range-scale {
   position: relative;
+  width: 287px;
   height: 4px;
   margin-top: 26px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -939,6 +944,7 @@ fieldset {
 
 .range-bar {
   position: absolute;
+
   height: 4px;
   background-color: #ffffff;
 }
@@ -960,6 +966,7 @@ fieldset {
 .range-toggle:focus {
   border: 3px solid #83b3d3;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  outline: none;
 }
 
 .range-toggle:active {
@@ -979,57 +986,76 @@ fieldset {
 .price-controls {
   display: flex;
   justify-content: center;
-  border: 2px solid #ffffff;
-  border-radius: 4px;
-}
-
-.price-controls:hover {
-  border: 2px solid #ffffff;
-  opacity: 0.6;
-}
-
-.price-controls:focus {
-  box-shadow: 0 0 0 3px #81b3d2;
-}
-
-.price-controls:active {
-  background-color: #756257;
-}
-
-.price-controls-label {
-  display: flex;
-  padding-top: 12px;
-  padding-bottom: 13px;
-  padding-right: 14px;
-  padding-left: 10px;
 }
 
 .price-controls-label span {
   opacity: 0.3;
 }
 
-.price-controls-input {
-  padding: 0;
-  padding-left: 5px;
+.price-controls-from {
+  padding-top: 12px;
+  padding-bottom: 13px;
+  padding-right: 14px;
+  padding-left: 10px;
   color: #ffffff;
-  width: 89px;
+  width: 117px;
   font: inherit;
   background-color: transparent;
-  border: none;
-  appearance: textfield;
+  outline: 2px solid #ffffff;
+  border-radius: 4px 0 0 4px;
 }
 
-.price-controls-input::-webkit-outer-spin-button,
-.price-controls-input::-webkit-inner-spin-button {
+.price-controls-to {
+  padding-top: 12px;
+  padding-bottom: 13px;
+  padding-right: 14px;
+  padding-left: 10px;
+  color: #ffffff;
+  width: 117px;
+  font: inherit;
+  background-color: transparent;
+  outline: 2px solid #ffffff;
+  border-radius: 0 4px 4px 0;
+}
+
+.price-controls-from:hover,
+.price-controls-to:hover {
+  outline: 2px solid rgb(255, 255, 255, 0.6);
+}
+
+.price-controls-from:focus,
+.price-controls-to:focus {
+  background-color: transparent;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 3px #81b3d2, inset 0 0 0 3px #81b3d2;
+
+  outline: none;
+}
+
+.price-controls-from:active,
+.price-controls-to:active {
+  background-color: #756257;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+}
+
+.price-controls-from::-webkit-outer-spin-button,
+.price-controls-from::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
 
+.price-controls-to::-webkit-outer-spin-button,
+.price-controls-to::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+/*
 .price-controls-label + .price-controls-label {
   margin-top: 4px;
   padding-top: 4px;
   border-left: 2px solid #ffffff;
-}
+}*/
 
 .parameters-button {
   display: flex;
@@ -1066,6 +1092,7 @@ fieldset {
   background-color: #68a2ca;
   border: 3px solid #ffffff;
   border-radius: 4px;
+  outline: none;
 }
 
 .button-apply:active {
@@ -1101,6 +1128,7 @@ fieldset {
   border: 3px solid #83b3d3;
   box-sizing: border-box;
   border-radius: 4px;
+  outline: none;
 }
 
 .button-reset:active {
@@ -1534,14 +1562,14 @@ fieldset {
   appearance: none;
 }
 
-.mailing_catalog {
+.mailing-catalog {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   margin-bottom: 46px;
 }
 
-.mailing_catalog h2 {
+.mailing-catalog h2 {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -1553,8 +1581,9 @@ fieldset {
 
 .popover {
   position: absolute;
-  left: -185px;
-  top: 50px;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
   box-sizing: border-box;
   width: 400px;
@@ -1824,7 +1853,7 @@ fieldset {
   position: absolute;
   width: 19px;
   height: 9px;
-  top: 67.1%;
+  top: 67.5%;
   left: 61%;
   margin-top: 2px;
   margin-left: 35px;
@@ -1839,7 +1868,8 @@ fieldset {
 .date-text-children {
   line-height: 40px;
   font-weight: 700;
-  margin-right: 15px;
+  margin-right: 25px;
+  margin-left: 55px;
 }
 
 .date-picker {
@@ -1852,7 +1882,7 @@ fieldset {
   font-family: inherit;
   font-weight: 700;
   color: #000000;
-  width: 401px;
+  width: 399px;
   background-color: #f2f2f2;
   border-radius: 4px;
   border: none;
@@ -1871,7 +1901,6 @@ fieldset {
 .date-picker:active {
   background-color: #ffffff;
   outline: 2px solid #000000;
-
   border: none;
 }
 
@@ -1879,20 +1908,39 @@ fieldset {
   margin: 0;
 }
 
-.date-picker::-webkit-calendar-picker-indicator {
+/*.date-picker::-webkit-calendar-picker-indicator {
   background-image: url("../img/modal/date.svg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 15px 15px;
   margin-right: 11px;
-}
+}*/
 
-.search-item-calendar {
+.calendar-departure {
   position: absolute;
-  top: 30%;
-  right: 18%;
-  z-index: 2;
   width: 15px;
   height: 15px;
+  border: none;
+  background-color: transparent;
+  top: 48%;
+  left: 84.5%;
+  opacity: 0.3;
+}
+
+.calendar-arrival {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: none;
+  background-color: transparent;
+  top: 31.8%;
+  left: 84.5%;
+  opacity: 0.3;
+}
+
+.calendar-departure:focus,
+.calendar-arrival:focus {
+  outline: none;
 }
 
 .correction {
@@ -1901,7 +1949,8 @@ fieldset {
   font-weight: 400;
   color: #333333;
   margin: 0;
-  margin-bottom: 20px;
+  margin-top: 7px;
+  margin-bottom: 23px;
   margin-left: 156px;
 }
 
@@ -1911,15 +1960,81 @@ fieldset {
   line-height: 20px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 15px;
   margin-left: 156px;
 }
 
-.minusplus {
-  border: none;
+.quantity {
+  display: flex;
+  justify-content: space-between;
+  width: 113px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  margin-left: 28px;
+}
+
+.input-adults,
+.input-children {
+  background: transparent;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  font-family: inherit;
   color: #000000;
-  opacity: 0.3;
-  width: 13px;
+  border: none;
+  width: 25px;
+  padding: 0;
+}
+
+.input-adults:focus,
+.input-children:focus {
+  outline: none;
+}
+
+.minus,
+.plus {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.minus svg {
+  padding: 12px 6px;
+}
+
+.plus svg {
+  padding: 6px;
+}
+
+.minus:hover path {
+  fill: #000000;
+  opacity: 1;
+}
+
+.plus:hover g {
+  fill: #000000;
+  opacity: 1;
+}
+
+.minus:focus svg,
+.plus:focus svg {
+  outline: 3px solid #83b3d3;
+  border-radius: 4px;
+}
+
+.minus:active path {
+  fill: #000000;
+  opacity: 0.2;
+}
+
+.plus:active g {
+  fill: #000000;
+  opacity: 0.2;
 }
 
 .minusplus:hover path {
@@ -1938,30 +2053,8 @@ fieldset {
   opacity: 0.2;
 }
 
-.controls_wrap {
+.controls-wrap {
   display: flex;
-  justify-content: space-between;
-}
-
-.quantity {
-  background-color: #f2f2f2;
-  border-radius: 4px;
-  width: 133px;
-  height: 50px;
-}
-
-.input-children,
-.input-adults {
-  border: none;
-  background-color: #f2f2f2;
-  font-weight: 700;
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 40px;
-  text-align: center;
-  padding: 0;
-  padding-top: 5px;
-  padding-left: 10px;
 }
 
 .button-blue {
