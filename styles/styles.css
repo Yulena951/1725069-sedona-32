@@ -983,79 +983,74 @@ fieldset {
   right: -10px;
 }
 
-.price-controls {
+.price-control {
   display: flex;
   justify-content: center;
 }
+.price-controls {
+  position: relative;
+  outline: none;
+  background: none;
+  height: 48px;
+  width: 145px;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  padding: 14px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 23px;
+}
 
-.price-controls-label span {
+.price-controls.left {
+  border-radius: 4px 0 0 4px;
+}
+.price-controls.right {
+  border-radius: 0 4px 4px 0;
+  border-left: none;
+}
+
+.price-controls-label {
+  position: relative;
+}
+
+.price-controls-label:before {
+  content: "";
+  position: absolute;
+  right: 14px;
+  top: 14px;
   opacity: 0.3;
 }
 
-.price-controls-from {
-  padding-top: 12px;
-  padding-bottom: 13px;
-  padding-right: 14px;
-  padding-left: 10px;
-  color: #ffffff;
-  width: 117px;
-  font: inherit;
-  background-color: transparent;
-  outline: 2px solid #ffffff;
-  border-radius: 4px 0 0 4px;
+.price-controls-label.right:before {
+  content: "до";
 }
 
-.price-controls-to {
-  padding-top: 12px;
-  padding-bottom: 13px;
-  padding-right: 14px;
-  padding-left: 10px;
-  color: #ffffff;
-  width: 117px;
-  font: inherit;
-  background-color: transparent;
-  outline: 2px solid #ffffff;
-  border-radius: 0 4px 4px 0;
+.price-controls-label.left:before {
+  content: "от";
 }
 
-.price-controls-from:hover,
-.price-controls-to:hover {
-  outline: 2px solid rgb(255, 255, 255, 0.6);
-}
-
-.price-controls-from:focus,
-.price-controls-to:focus {
-  background-color: transparent;
-  border: 3px solid #ffffff;
-  box-shadow: 0 0 0 3px #81b3d2, inset 0 0 0 3px #81b3d2;
-
+.price-controls:focus,
+:active {
   outline: none;
 }
 
-.price-controls-from:active,
-.price-controls-to:active {
-  background-color: #756257;
+.price-controls:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+.price-controls:focus {
   border: 2px solid #ffffff;
-  box-sizing: border-box;
+  box-shadow: 0 0 0 3px #81b3d2, inset 0 0 0 3px #81b3d2;
 }
 
-.price-controls-from::-webkit-outer-spin-button,
-.price-controls-from::-webkit-inner-spin-button {
+.price-controls:active {
+  background-color: #756257;
+}
+
+.price-controls::-webkit-outer-spin-button,
+.price-controls::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
-
-.price-controls-to::-webkit-outer-spin-button,
-.price-controls-to::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
-}
-/*
-.price-controls-label + .price-controls-label {
-  margin-top: 4px;
-  padding-top: 4px;
-  border-left: 2px solid #ffffff;
-}*/
 
 .parameters-button {
   display: flex;
@@ -1803,7 +1798,6 @@ fieldset {
 .modal-title {
   margin: 0;
   padding-bottom: 63px;
-
   font-size: 30px;
   line-height: 40px;
   font-weight: 700;
