@@ -216,10 +216,10 @@ body {
 }
 
 .promo-first {
-  background-image: url("../img/index/white_fone.svg"),
+  background-image: url("../img/index/white-fone.svg"),
     url("../img/index/fone.jpg");
   background-position: bottom;
-  background-color: #6158e0;
+  background-color: #91b8d9;
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
@@ -250,6 +250,7 @@ body {
 .index-columns {
   display: flex;
   justify-content: space-between;
+  background-color: #83b3d3;
 }
 
 .features-list {
@@ -284,7 +285,7 @@ body {
   padding-bottom: 18px;
 }
 
-.blue-bloc {
+.blue-block {
   text-align: center;
   background-color: #83b3d3;
   color: #ffffff;
@@ -300,21 +301,33 @@ body {
   margin-bottom: 18px;
 }
 
-.light-bloc {
+.light-block {
   text-align: center;
   background-color: #83b3d31f;
   width: 400px;
 }
 
-.light-bloc-house {
-  padding-top: 89px;
+.light-block-house {
+  display: block;
+  background-position: center;
+  background-image: url("../img/index/house.svg");
+  background-repeat: no-repeat;
+  padding-top: 250px;
 }
 
-.light-bloc-burger {
+.light-block-burger {
+  display: block;
+  background-position: center;
+  background-image: url("../img/index/burger.svg");
+  background-repeat: no-repeat;
   padding-top: 91px;
 }
 
-.light-bloc-gift {
+.light-block-gift {
+  display: block;
+  background-position: center;
+  background-image: url("../img/index/gift.svg");
+  background-repeat: no-repeat;
   padding-top: 85px;
 }
 
@@ -324,7 +337,7 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-top: 20px;
+
   padding-bottom: 18px;
   margin: 0;
 }
@@ -431,7 +444,7 @@ body {
   background-image: url("../img/index/fonemail.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-color: #495175;
+  background-color: #8e999f;
   color: #ffffff;
 }
 
@@ -470,8 +483,9 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
-  font: inherit;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: inherit;
   height: 60px;
   width: 603px;
   border: none;
@@ -718,21 +732,17 @@ body {
   opacity: 0.3;
 }
 
-fieldset {
-  border: 0 none;
-}
-
 .parameters {
   padding-top: 31px;
   padding-right: 72px;
-  padding-bottom: 83px;
+  padding-bottom: 79px;
   padding-left: 71px;
   color: #ffffff;
-  background-image: url("../img/catalog/fone_catalog.jpg");
+  background-image: url("../img/catalog/fone-catalog.jpg");
   background-repeat: no-repeat;
   box-sizing: border-box;
   background-size: cover;
-  background-color: #495175;
+  background-color: #2f414d;
 }
 
 .parameters-list-nav {
@@ -815,6 +825,7 @@ fieldset {
   padding: 0;
   margin: 0;
   width: 150px;
+  border: none;
 }
 
 .parameters-form-type {
@@ -822,6 +833,7 @@ fieldset {
   width: 145px;
   margin-left: 67px;
   margin-right: 167px;
+  border: none;
 }
 
 .checkbox label::before {
@@ -928,10 +940,11 @@ fieldset {
 .parameters-form-cost {
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 .range {
-  margin-top: 9px;
+  margin-top: 8px;
 }
 
 .range-scale {
@@ -951,8 +964,8 @@ fieldset {
 
 .range-toggle {
   position: absolute;
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   background: #ffffff;
   border: none;
   border-radius: 5px;
@@ -996,10 +1009,13 @@ fieldset {
   width: 145px;
   border: 2px solid #ffffff;
   box-sizing: border-box;
-  padding: 14px;
+  padding-top: 11px;
+  padding-left: 18px;
+  padding-bottom: 11px;
   color: #ffffff;
   font-size: 18px;
   line-height: 23px;
+  font-family: inherit;
 }
 
 .price-controls.left {
@@ -1018,17 +1034,21 @@ fieldset {
 .price-controls-label:before {
   content: "";
   position: absolute;
-  right: 14px;
-  top: 14px;
+
+  top: 10px;
   opacity: 0.3;
+  line-height: 23px;
+  font-family: inherit;
 }
 
 .price-controls-label.right:before {
   content: "до";
+  right: 17px;
 }
 
 .price-controls-label.left:before {
   content: "от";
+  right: 13px;
 }
 
 .price-controls:focus,
@@ -1039,6 +1059,7 @@ fieldset {
 .price-controls:hover {
   border-color: rgba(255, 255, 255, 0.3);
 }
+
 .price-controls:focus {
   border: 2px solid #ffffff;
   box-shadow: 0 0 0 3px #81b3d2, inset 0 0 0 3px #81b3d2;
@@ -1147,8 +1168,8 @@ fieldset {
 
 .sorting {
   display: flex;
-  padding-top: 44px;
-  padding-bottom: 35px;
+  padding-top: 43px;
+  padding-bottom: 41px;
   padding-left: 71px;
   padding-right: 72px;
 }
@@ -1162,6 +1183,7 @@ fieldset {
   width: 340px;
   margin: 0;
   padding: 0;
+  margin-top: 5px;
 }
 
 .sorting-container {
@@ -1206,15 +1228,20 @@ fieldset {
 
 .select-control {
   width: 100%;
-  padding: 6px 14px;
+  padding-top: 10px;
+  padding-bottom: 13px;
+  padding-left: 17px;
+
   margin-right: 84px;
-  font: inherit;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 23px;
   border: 2px solid #e6e6e6;
   background-color: #ffffff;
   color: #333333;
   background-image: url("../img/catalog/sorting.svg");
   background-repeat: no-repeat;
-  background-position: right 16px center;
+  background-position: right 15px center;
   appearance: none;
   border-radius: 4px;
 }
@@ -1305,7 +1332,7 @@ fieldset {
   opacity: 0.3;
 }
 
-.bloc {
+.block {
   margin-top: 27px;
   max-width: 500px;
 }
@@ -1426,8 +1453,32 @@ fieldset {
 }
 
 .rating-img {
-  margin: 0;
-  padding: 0;
+  position: relative;
+  width: 50%;
+}
+
+.rating-img::before {
+  content: "";
+  position: absolute;
+
+  background-image: url("../img/catalog/star.svg");
+  background-repeat: space;
+  background-size: 18px 17px;
+}
+
+.rating-img-4::before {
+  width: 89px;
+  height: 17px;
+}
+
+.rating-img-3::before {
+  width: 68px;
+  height: 17px;
+}
+
+.rating-img-2::before {
+  width: 43px;
+  height: 17px;
 }
 
 .rating {
@@ -1436,7 +1487,7 @@ fieldset {
   flex-direction: column;
   align-items: center;
   margin-top: 33px;
-  margin-right: 4px;
+
   margin-left: auto;
   padding-bottom: 29px;
 }
@@ -1453,8 +1504,8 @@ fieldset {
   font-family: inherit;
   padding-top: 9px;
   padding-bottom: 10px;
-  padding-left: 30px;
-  padding-right: 29px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .pagination-show-more {
@@ -1471,10 +1522,11 @@ fieldset {
   text-decoration: none;
   text-transform: uppercase;
   width: 625px;
-  height: 55px;
+
   margin-top: 31px;
   margin-bottom: 30px;
-  padding: 0;
+  padding-top: 14px;
+  padding-bottom: 15px;
   font-family: inherit;
 }
 
@@ -1490,7 +1542,6 @@ fieldset {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  max-width: 390px;
 }
 
 .pagination-item:not(:last-child) {
@@ -1499,11 +1550,14 @@ fieldset {
 }
 
 .pagination-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   box-sizing: border-box;
   min-width: 55px;
   min-height: 55px;
-  padding: 13px 21px;
+
   border-radius: 4px;
   color: #ffffff;
   background-color: #83b3d3;
@@ -1538,6 +1592,7 @@ fieldset {
 .sorting-type {
   line-height: 23px;
   margin-left: auto;
+  max-width: 390px;
 }
 
 .pagination-control {
@@ -1546,11 +1601,13 @@ fieldset {
   color: #333333;
   border-radius: 4px;
   width: 160px;
-  padding: 8px 14px;
+  padding-top: 9px;
+  padding-left: 15px;
+  padding-bottom: 10px;
   margin: 0;
   margin-top: 4px;
   margin-left: 47px;
-  padding-left: 10px;
+
   font: inherit;
   background-image: url("../img/catalog/sorting.svg");
   background-repeat: no-repeat;
@@ -1577,7 +1634,7 @@ fieldset {
 
 .popover {
   position: absolute;
-  top: 40px;
+  top: 47px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -1596,9 +1653,9 @@ fieldset {
   position: absolute;
   width: 20px;
   height: 9px;
-  top: -7%;
+  top: -7.5%;
   left: 50%;
-  margin-left: -9px;
+  margin-left: -13px;
 }
 
 .popover-content p {
@@ -1613,6 +1670,7 @@ fieldset {
   display: inline-block;
   box-sizing: border-box;
   font-family: inherit;
+  line-height: 21px;
   text-align: center;
   border: none;
   text-decoration: none;
@@ -1624,10 +1682,10 @@ fieldset {
   background-color: #756257;
   border-radius: 0 0 20px 20px;
   font-weight: 700;
-  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-top: 9px;
   width: 400px;
-  height: 60px;
 }
 
 .popover-content {
@@ -1658,7 +1716,7 @@ fieldset {
 .hotel {
   display: flex;
   flex-direction: column;
-  margin-left: 16px;
+  margin-left: 10px;
 }
 
 .cart-item-button {
@@ -1672,7 +1730,7 @@ fieldset {
   background-position: center;
   background-color: transparent;
   margin-left: auto;
-  background-image: url("../img/popap/basket.svg");
+  background-image: url("../img/popover/basket.svg");
   background-repeat: no-repeat;
 }
 
@@ -1685,14 +1743,14 @@ fieldset {
   opacity: 0.6;
 }
 
-.popover-bloc {
+.popover-block {
   text-decoration: none;
   display: flex;
-  padding: 10px;
+  padding: 10px 10px 10px 15px;
   margin-top: 7px;
 }
 
-.popover-bloc:focus {
+.popover-block:focus {
   outline: 3px solid #83b3d3;
   box-sizing: border-box;
   border-radius: 10px;
@@ -1704,13 +1762,13 @@ fieldset {
 }
 
 .cart-item-button:hover {
-  background-image: url("../img/popap/basket-black.svg");
+  background-image: url("../img/popover/basket-black.svg");
   background-size: 16px 16px;
 }
 
 .cart-item-button:focus {
   border: 3px solid #83b3d3;
-  background-image: url("../img/popap/basket-black.svg");
+  background-image: url("../img/popover/basket-black.svg");
   background-size: 16px 16px;
   border-radius: 10px;
 }
@@ -1743,7 +1801,7 @@ fieldset {
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(242, 242, 242, 0.8);
 }
 
 .modal-container-close {
@@ -1767,10 +1825,12 @@ fieldset {
 
 .modal-close {
   position: absolute;
-  padding: 0;
   top: 10%;
   right: 10%;
   background-color: #f2f2f2;
+  background-image: url("../img/modal/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -1945,7 +2005,7 @@ fieldset {
   color: #333333;
   margin: 0;
   margin-top: 7px;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
   margin-left: 156px;
 }
 
@@ -1955,8 +2015,8 @@ fieldset {
   line-height: 20px;
   font-weight: 400;
   margin: 0;
-  margin-top: 5px;
-  margin-bottom: 15px;
+  margin-top: 1px;
+  margin-bottom: 17px;
   margin-left: 156px;
 }
 
@@ -1983,6 +2043,9 @@ fieldset {
   border: none;
   width: 25px;
   padding: 0;
+  padding-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 8px;
 }
 
 .input-adults:focus,
@@ -1999,11 +2062,11 @@ fieldset {
 }
 
 .minus svg {
-  padding: 12px 6px;
+  padding-left: 8px;
 }
 
 .plus svg {
-  padding: 6px;
+  padding-right: 9px;
 }
 
 .minus:hover path {

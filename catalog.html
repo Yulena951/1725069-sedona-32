@@ -53,7 +53,7 @@
                   />
                 </svg>
 
-                <span class="visually-hidden"> Поиск </span>
+                <span class="visually-hidden"> Поиск.</span>
               </a>
             </li>
             <li class="nav-item">
@@ -72,7 +72,7 @@
                   />
                 </svg>
                 <span class="link-nav-quantity">12</span>
-                <span class="visually-hidden"> Избранное </span>
+                <span class="visually-hidden"> Избранное.</span>
               </a>
             </li>
             <li class="nav-item">
@@ -126,7 +126,7 @@
                   </defs>
                 </svg>
 
-                <span class="visually-hidden">Главная</span>
+                <span class="visually-hidden">Главная.</span>
               </li>
 
               <li>
@@ -180,6 +180,7 @@
                   </li>
                 </ul>
               </fieldset>
+
               <fieldset class="parameters-form-type">
                 <legend>Тип жилья:</legend>
                 <ul class="parameters-list">
@@ -188,7 +189,7 @@
                       <input
                         class="visually-hidden"
                         type="radio"
-                        name="hotel"
+                        name="housing-type"
                         id="filter-hotel"
                         checked
                       />
@@ -202,7 +203,7 @@
                       <input
                         class="visually-hidden"
                         type="radio"
-                        name="motel"
+                        name="housing-type"
                         id="filter-motel"
                       />
                       <label class="control" for="filter-motel"> Мотель</label>
@@ -213,7 +214,7 @@
                       <input
                         class="visually-hidden"
                         type="radio"
-                        name="apartments"
+                        name="housing-type"
                         id="filter-apartments"
                       />
                       <label class="control" for="filter-apartments">
@@ -266,15 +267,15 @@
                 <button class="button-apply" type="submit">
                   <span>Применить</span>
                 </button>
-                <button class="button-reset" type="submit">Сбросить</button>
+                <button class="button-reset" type="button">Сбросить</button>
               </div>
             </form>
           </section>
           <section class="sorting">
-            <h1 class="visually-hidden">Выбор гостиниц</h1>
-            <h2 class="sorting-heading">Найдено гостиниц: 38</h2>
+            <h2 class="visually-hidden">Выбор гостиниц</h2>
+            <h3 class="sorting-heading">Найдено гостиниц: 38</h3>
             <div class="sorting-container">
-              <form class="sortings-type">
+              <form class="sortings-type" action="https://echo.htmlacademy.ru/">
                 <div class="select">
                   <label class="visually-hidden" for="sorting"
                     >Сортировка</label
@@ -308,7 +309,7 @@
                   <path d="M10 8H6V14H10V8Z" fill="black" />
                 </svg>
 
-                <span class="visually-hidden">Показать карточки</span>
+                <span class="visually-hidden">Показать карточки.</span>
               </a>
               <a href="#" class="button"
                 ><svg
@@ -324,7 +325,7 @@
                   <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black" />
                 </svg>
 
-                <span class="visually-hidden">Показать во весь экран</span>
+                <span class="visually-hidden">Показать во весь экран.</span>
               </a>
               <a href="#" class="button button-current"
                 ><svg
@@ -346,7 +347,7 @@
                   <path d="M16 12H4V14H16V12Z" fill="black" />
                 </svg>
 
-                <span class="visually-hidden">Показать список</span>
+                <span class="visually-hidden">Показать список.</span>
               </a>
             </div>
           </section>
@@ -361,7 +362,7 @@
                   width="180"
                   height="120"
                 />
-                <div class="bloc">
+                <div class="block">
                   <p class="title-hotel">Amara Resort & Spa</p>
                   <p class="cost">
                     <span>Гостиница</span><span>От 4000 ₽</span>
@@ -376,35 +377,9 @@
                   </p>
                 </div>
                 <div class="rating">
-                  <p class="rating-img">
-                    <img
-                      src="img/catalog/star.svg"
-                      width="18"
-                      height="17"
-                      alt="звезда"
-                    />
-
-                    <img
-                      src="img/catalog/star.svg"
-                      width="18"
-                      height="17"
-                      alt="звезда"
-                    />
-
-                    <img
-                      src="img/catalog/star.svg"
-                      width="18"
-                      height="17"
-                      alt="звезда"
-                    />
-
-                    <img
-                      src="img/catalog/star.svg"
-                      width="18"
-                      height="17"
-                      alt="звезда"
-                    />
-                  </p>
+                  <div class="rating-img rating-img-4">
+                    <span class="visually-hidden">Четырехзвездочный.</span>
+                  </div>
 
                   <button class="ratings" type="button">Рейтинг: 8,5</button>
                 </div>
@@ -417,7 +392,7 @@
                   width="180"
                   height="120"
                 />
-                <div class="bloc">
+                <div class="block">
                   <p class="title-hotel">Desert Quail Inn</p>
                   <p class="cost"><span>Мотель</span><span>От 3000 ₽</span></p>
                   <p>
@@ -430,27 +405,9 @@
                   </p>
                 </div>
                 <div class="rating">
-                  <p class="rating-img">
-                    <img
-                      src="img/catalog/star.svg"
-                      width="18"
-                      height="17"
-                      alt="звезда"
-                    />
-                    <img
-                      src="img/catalog/star.svg"
-                      width="18"
-                      height="17"
-                      alt="звезда"
-                    />
-                    <img
-                      src="img/catalog/star.svg"
-                      width="18"
-                      height="17"
-                      alt="звезда"
-                    />
-                  </p>
-
+                  <div class="rating-img rating-img-3">
+                    <span class="visually-hidden">Трехзвездочный.</span>
+                  </div>
                   <button class="ratings" type="button">Рейтинг: 8,9</button>
                 </div>
               </li>
@@ -462,7 +419,7 @@
                   width="180"
                   height="120"
                 />
-                <div class="bloc">
+                <div class="block">
                   <p class="title-hotel">Villas at Poco Diablo</p>
                   <p class="cost">
                     <span>Апартаменты</span><span>От 2000 ₽</span>
@@ -477,20 +434,9 @@
                   </p>
                 </div>
                 <div class="rating">
-                  <p class="rating-img">
-                    <img
-                      src="img/catalog/star.svg"
-                      width="18"
-                      height="17"
-                      alt="звезда"
-                    />
-                    <img
-                      src="img/catalog/star.svg"
-                      width="18"
-                      height="17"
-                      alt="звезда"
-                    />
-                  </p>
+                  <div class="rating-img rating-img-2">
+                    <span class="visually-hidden">Двухзвездочный.</span>
+                  </div>
 
                   <button class="ratings" type="button">Рейтинг: 9,2</button>
                 </div>
@@ -503,7 +449,7 @@
                   width="180"
                   height="120"
                 />
-                <div class="bloc">
+                <div class="block">
                   <p class="title-hotel">GreenTree Inn</p>
                   <p class="cost">
                     <span>Гостиница</span><span>От 3000 ₽</span>
@@ -519,30 +465,15 @@
                 </div>
 
                 <div class="rating">
-                  <p class="rating-img">
-                    <img
-                      src="img/catalog/star.svg"
-                      width="18"
-                      height="17"
-                      alt="звезда"
-                    />
-                    <img
-                      src="img/catalog/star.svg"
-                      width="18"
-                      height="17"
-                      alt="звезда"
-                    />
-                  </p>
+                  <div class="rating-img rating-img-2">
+                    <span class="visually-hidden">Двухзвездочный.</span>
+                  </div>
                   <button class="ratings" type="button">Рейтинг: 9,2</button>
                 </div>
               </li>
-
-              <li class="container-item">
-                <button class="pagination-show-more" type="button">
-                  Загрузить еще
-                </button>
-              </li>
             </ul>
+            <a class="pagination-show-more" href="#"> Загрузить еще </a>
+
             <div class="pagination-container">
               <ul class="pagination">
                 <li class="pagination-item">
@@ -567,7 +498,7 @@
                   <a class="pagination-link" href="#"><span>10</span></a>
                 </li>
               </ul>
-              <form class="sorting-type">
+              <form class="sorting-type" action="https://echo.htmlacademy.ru/">
                 <span>Гостиниц на странице:</span>
                 <label class="visually-hidden" for="quantity"
                   >Выбор количества гостиниц</label
@@ -628,21 +559,21 @@
                   class="social-button footer-social-tw"
                   href="https://twitter.com/htmlacademy_ru"
                 >
-                  <span class="visually-hidden">Твиттер</span>
+                  <span class="visually-hidden">Твиттер.</span>
                 </a>
               </li>
               <li class="social-item">
                 <a
                   class="social-button footer-social-fb"
                   href="https://www.facebook.com/htmlacademy"
-                  ><span class="visually-hidden">Фейсбук</span>
+                  ><span class="visually-hidden">Фейсбук.</span>
                 </a>
               </li>
               <li class="social-item">
                 <a
                   class="social-button footer-social-youtube"
                   href="https://www.youtube.com/HTMLAcademyRUS"
-                  ><span class="visually-hidden">Ютуб</span>
+                  ><span class="visually-hidden">Ютуб.</span>
                 </a>
               </li>
             </ul>
