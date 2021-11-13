@@ -1487,7 +1487,6 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 33px;
-
   margin-left: auto;
   padding-bottom: 29px;
 }
@@ -1522,7 +1521,6 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   width: 625px;
-
   margin-top: 31px;
   margin-bottom: 30px;
   padding-top: 14px;
@@ -1557,7 +1555,6 @@ body {
   box-sizing: border-box;
   min-width: 55px;
   min-height: 55px;
-
   border-radius: 4px;
   color: #ffffff;
   background-color: #83b3d3;
@@ -1607,7 +1604,6 @@ body {
   margin: 0;
   margin-top: 4px;
   margin-left: 47px;
-
   font: inherit;
   background-image: url("../img/catalog/sorting.svg");
   background-repeat: no-repeat;
