@@ -219,7 +219,7 @@ body {
   background-image: url("../img/index/white-fone.svg"),
     url("../img/index/fone.jpg");
   background-position: bottom;
-  background-color: #91b8d9;
+  background-color: #608aba;
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
@@ -304,7 +304,21 @@ body {
 .light-block {
   text-align: center;
   background-color: #83b3d31f;
-  width: 400px;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 384px;
+}
+
+.white-block {
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 384px;
 }
 
 .light-block-house {
@@ -312,7 +326,9 @@ body {
   background-position: center;
   background-image: url("../img/index/house.svg");
   background-repeat: no-repeat;
-  padding-top: 250px;
+  width: 75px;
+  height: 72px;
+  margin-bottom: 23px;
 }
 
 .light-block-burger {
@@ -320,7 +336,9 @@ body {
   background-position: center;
   background-image: url("../img/index/burger.svg");
   background-repeat: no-repeat;
-  padding-top: 91px;
+  width: 74px;
+  height: 70px;
+  margin-bottom: 23px;
 }
 
 .light-block-gift {
@@ -328,7 +346,9 @@ body {
   background-position: center;
   background-image: url("../img/index/gift.svg");
   background-repeat: no-repeat;
-  padding-top: 85px;
+  width: 64px;
+  height: 76px;
+  margin-bottom: 23px;
 }
 
 .light-title-1 {
@@ -337,7 +357,6 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-
   padding-bottom: 18px;
   margin: 0;
 }
@@ -348,31 +367,33 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-top: 98px;
-
   margin: 0;
 }
 
 .number {
+  padding-top: 25px;
+  padding-bottom: 28px;
   margin: 0;
-  padding-top: 26px;
-  padding-bottom: 31px;
 }
 
 .title-description {
-  padding-bottom: 90px;
   margin: 0;
 }
 
 .light-title-description {
   margin: 0;
-  padding-bottom: 111px;
+  height: 55px;
 }
 
 .road {
   text-align: center;
   background-color: #83b3d333;
-  width: 400px;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 384px;
 }
 
 .search {
@@ -444,7 +465,7 @@ body {
   background-image: url("../img/index/fonemail.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-color: #8e999f;
+  background-color: #5486ab;
   color: #ffffff;
 }
 
@@ -742,7 +763,7 @@ body {
   background-repeat: no-repeat;
   box-sizing: border-box;
   background-size: cover;
-  background-color: #2f414d;
+  background-color: #4a5f70;
 }
 
 .parameters-list-nav {
@@ -1115,10 +1136,7 @@ body {
 
 .button-apply:active {
   background-color: #68a2ca;
-}
-
-.button-apply:active span {
-  opacity: 0.3;
+  color: rgba(225, 225, 225, 0.3);
 }
 
 .button-reset {
@@ -1469,16 +1487,19 @@ body {
 .rating-img-4::before {
   width: 89px;
   height: 17px;
+  transform: translateX(-5px);
 }
 
 .rating-img-3::before {
   width: 68px;
   height: 17px;
+  transform: translateX(5px);
 }
 
 .rating-img-2::before {
   width: 43px;
   height: 17px;
+  transform: translateX(18px);
 }
 
 .rating {
@@ -1882,12 +1903,12 @@ body {
 
 .popover-info {
   position: absolute;
-  top: 70.5%;
-  right: 15%;
+  top: 70.8%;
+  right: 14.7%;
   z-index: 1;
   box-sizing: border-box;
   width: 256px;
-  padding-top: 15px;
+  padding-top: 18px;
   padding-bottom: 18px;
   padding-left: 22px;
   padding-right: 18px;
@@ -1906,8 +1927,8 @@ body {
   height: 9px;
   top: 67.5%;
   left: 61%;
-  margin-top: 2px;
-  margin-left: 35px;
+  margin-top: 1px;
+  margin-left: 36px;
 }
 
 .date-text {
@@ -2055,14 +2076,16 @@ body {
   border: 0;
   background: transparent;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .minus svg {
-  padding-left: 8px;
+  padding: 12px 6px;
 }
 
 .plus svg {
-  padding-right: 9px;
+  padding: 6px;
 }
 
 .minus:hover path {
@@ -2127,7 +2150,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 40px;
-  margin-top: 40px;
+  margin-top: 33px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
