@@ -92,7 +92,7 @@ body {
   position: relative;
   display: block;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 26px;
   font-weight: 700;
   padding: 6px 12px;
   text-align: center;
@@ -131,7 +131,7 @@ body {
 .link-nav-current::before {
   position: absolute;
   right: 12px;
-  bottom: -19px;
+  bottom: -13px;
   left: 12px;
   height: 2px;
   background-color: #756257;
@@ -146,6 +146,14 @@ body {
   fill: #756257;
   border: 3px solid #83b3d3;
   border-radius: 10px;
+}
+
+.magnifier {
+  line-height: 18px;
+}
+
+.heart {
+  line-height: 17px;
 }
 
 .navigation-icon:active path {
@@ -368,10 +376,10 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
+  padding-bottom: 25px;
 }
 
 .number {
-  padding-top: 25px;
   padding-bottom: 28px;
   margin: 0;
 }
@@ -382,7 +390,7 @@ body {
 
 .light-title-description {
   margin: 0;
-  height: 55px;
+  padding-bottom: 14px;
 }
 
 .road {
@@ -972,13 +980,12 @@ body {
   position: relative;
   width: 287px;
   height: 4px;
-  margin-top: 26px;
+  margin-top: 27px;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
 .range-bar {
   position: absolute;
-
   height: 4px;
   background-color: #ffffff;
 }
@@ -1050,12 +1057,12 @@ body {
 
 .price-controls-label {
   position: relative;
+  line-height: 23px;
 }
 
-.price-controls-label::content {
+.price-controls-label::before {
   content: "";
   position: absolute;
-
   top: 10px;
   opacity: 0.3;
   line-height: 23px;
@@ -1099,6 +1106,8 @@ body {
 .parameters-button {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-left: 81px;
   margin-top: 25px;
 }
@@ -1113,6 +1122,7 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   font-size: 16px;
+  line-height: 21px;
   font-weight: 700;
   border-radius: 4px;
   color: #ffffff;
@@ -1121,6 +1131,7 @@ body {
   min-height: 48px;
   margin-top: 38px;
   margin-bottom: 15px;
+  padding: 0;
 }
 
 .button-apply:hover {
@@ -1154,6 +1165,7 @@ body {
   color: #ffffff;
   min-width: 100px;
   min-height: 32px;
+  padding: 0;
 }
 
 .button-reset:hover {
@@ -1364,6 +1376,7 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   font-size: 16px;
+  line-height: 21px;
   font-weight: 700;
   background-color: #756257;
 
@@ -1406,7 +1419,7 @@ body {
   font-size: 16px;
   font-weight: 700;
   background-color: #83b3d3;
-
+  line-height: 21px;
   color: #ffffff;
   padding-top: 7px;
   padding-bottom: 7px;
@@ -1442,6 +1455,7 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   font-size: 16px;
+  line-height: 21px;
   font-weight: 700;
   background-color: #7db54f;
   color: #ffffff;
@@ -1979,14 +1993,6 @@ body {
   margin: 0;
 }
 
-/*.date-picker::-webkit-calendar-picker-indicator {
-  background-image: url("../img/modal/date.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 15px 15px;
-  margin-right: 11px;
-}*/
-
 .calendar-departure {
   position: absolute;
   width: 15px;
@@ -2059,9 +2065,21 @@ body {
   border: none;
   width: 25px;
   padding: 0;
-  padding-left: 10px;
+  padding-left: 2px;
   padding-top: 2px;
   padding-bottom: 8px;
+}
+
+.input-adults::-webkit-outer-spin-button,
+.input-adults::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.input-children::-webkit-outer-spin-button,
+.input-children::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .input-adults:focus,
